@@ -1,0 +1,30 @@
+---
+import Bike from "../icons/Bike.astro";
+import LinkMinus from "../icons/LinkMinus.astro";
+import User from "../icons/User.astro";
+import CardProyects from "./CardProyects.astro";
+---
+
+<section class="grid grid-flow-row grid-cols-[repeat(auto-fill,minMax(20rem,1fr))] gap-4">
+  <CardProyects
+    link="https://github.com/rsbmk/shortener"
+    title="Shortener API"
+    description="Este proyecto es un acortador de enlaces, que permite a los usuarios crear enlaces cortos para compartirlos con otras personas"
+  >
+    <LinkMinus slot="icon" />
+  </CardProyects>
+  <CardProyects
+    link="https://github.com/rsbmk/bike-api"
+    title="Bike API"
+    description="Esta aplicación, desarrollada en Deno y desplegada en Deno Deploy, representa un proyecto que combina lo mejor de la arquitectura hexagonal DDD y los principios SOLID"
+  >
+    <Bike slot="icon" />
+  </CardProyects>
+  <CardProyects
+    link="https://github.com/rsbmk/api-mavs"
+    title="MAVS API"
+    description="Este proyecto representa una de mis primeras incursiones en el desarrollo de aplicaciones REST API, centrándome específicamente en la arquitectura Backend for Frontend (BFF)"
+  >
+    <User slot="icon" />
+  </CardProyects>
+</section>

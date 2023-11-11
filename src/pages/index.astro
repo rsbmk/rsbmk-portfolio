@@ -1,0 +1,33 @@
+---
+import AboutMe from "../components/AboutMe.astro";
+import Social from "../components/Social.astro";
+import TimeLine from "../components/TimeLine/index.astro";
+import Proyects from "../components/Proyects/index.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Roberto Samuel Bocio Melo - Portfolio 💼</title>
+  </head>
+  <body>
+    <main class="border-x-2 px-4 border-gray-600 max-w-3xl md:w-full mx-auto pb-10">
+      <h1 class="text-gray-600 font-medium text-4xl mb-4 pb-4 pt-12 border-b-[1px] border-gray-200">
+        Roberto Bocio 👋
+      </h1>
+      <AboutMe />
+      <Social />
+      <h2 class="text-gray-600 font-medium text-3xl mb-4 pb-4 pt-12 border-b-[1px] border-gray-200">
+        Mi experiencia 👨‍💻
+      </h2>
+      <TimeLine />
+      <h2 class="text-gray-600 font-medium text-3xl mb-4 pb-4 pt-12 border-b-[1px] border-gray-200">
+        Proyectos personales 🚀
+      </h2>
+      <Proyects />
+    </main>
+  </body>
+</html>
